@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{19FB6227-FD89-46CE-B91A-AF4FFF2208FC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GymSignIn</RootNamespace>
+    <AssemblyName>GymSignIn</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\EmailController.cs" />
+    <Compile Include="Controllers\SqlController.cs" />
+    <Compile Include="GymDataBaseDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GymDataBaseDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GymDataBaseDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GymDataBaseDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GymDataBaseDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GymDataBaseDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="View\AlreadySignMsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AlreadySignMsgBox.Designer.cs">
+      <DependentUpon>AlreadySignMsgBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DataForm.Designer.cs">
+      <DependentUpon>DataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GymDataBaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GymDataBaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GymDataBaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GymDataBaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GymDataBaseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GymDataBaseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GymDataBaseDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GymDataBaseDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GymDataBaseDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GymDataBaseDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GymDataBaseDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GymDataBaseDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GymDataBaseDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GymDataBaseDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Client.cs" />
+    <Compile Include="View\MsgID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MsgID.Designer.cs">
+      <DependentUpon>MsgID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\NewUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\NewUserForm.Designer.cs">
+      <DependentUpon>NewUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\TodaysSignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TodaysSignIn.Designer.cs">
+      <DependentUpon>TodaysSignIn.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\AlreadySignMsgBox.resx">
+      <DependentUpon>AlreadySignMsgBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DataForm.resx">
+      <DependentUpon>DataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MsgID.resx">
+      <DependentUpon>MsgID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\NewUserForm.resx">
+      <DependentUpon>NewUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View\TodaysSignIn.resx">
+      <DependentUpon>TodaysSignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="GymDataBaseDataSet.xsc">
+      <DependentUpon>GymDataBaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GymDataBaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GymDataBaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GymDataBaseDataSet.xss">
+      <DependentUpon>GymDataBaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GymDataBaseDataSet1.xsc">
+      <DependentUpon>GymDataBaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GymDataBaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GymDataBaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GymDataBaseDataSet1.xss">
+      <DependentUpon>GymDataBaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GymDataBaseDataSet2.xsc">
+      <DependentUpon>GymDataBaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="GymDataBaseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GymDataBaseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GymDataBaseDataSet2.xss">
+      <DependentUpon>GymDataBaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="GymDataBaseDataSet3.xsc">
+      <DependentUpon>GymDataBaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="GymDataBaseDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GymDataBaseDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GymDataBaseDataSet3.xss">
+      <DependentUpon>GymDataBaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="GymDataBaseDataSet4.xsc">
+      <DependentUpon>GymDataBaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="GymDataBaseDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GymDataBaseDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GymDataBaseDataSet4.xss">
+      <DependentUpon>GymDataBaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="GymDataBaseDataSet5.xsc">
+      <DependentUpon>GymDataBaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="GymDataBaseDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GymDataBaseDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GymDataBaseDataSet5.xss">
+      <DependentUpon>GymDataBaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="GymDataBaseDataSet6.xsc">
+      <DependentUpon>GymDataBaseDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="GymDataBaseDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GymDataBaseDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GymDataBaseDataSet6.xss">
+      <DependentUpon>GymDataBaseDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="GymDataBaseDataSet7.xsc">
+      <DependentUpon>GymDataBaseDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="GymDataBaseDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GymDataBaseDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GymDataBaseDataSet7.xss">
+      <DependentUpon>GymDataBaseDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="GymDataBaseDataSet8.xsc">
+      <DependentUpon>GymDataBaseDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="GymDataBaseDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GymDataBaseDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GymDataBaseDataSet8.xss">
+      <DependentUpon>GymDataBaseDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="GymDataBaseDataSet9.xsc">
+      <DependentUpon>GymDataBaseDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="GymDataBaseDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GymDataBaseDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GymDataBaseDataSet9.xss">
+      <DependentUpon>GymDataBaseDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\BackgroundGym.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
