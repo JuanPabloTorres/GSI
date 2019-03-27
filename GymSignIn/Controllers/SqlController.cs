@@ -15,7 +15,7 @@ namespace GymSignIn.Controllers
         SqlConnection conn;
         SqlDataAdapter adapter;
 
-        void OpenConnection()
+      public  void OpenConnection()
         {
             string strconn = "Data Source=.;Initial Catalog=GymDataBase;Integrated Security=True";
             conn = new SqlConnection(strconn);
@@ -220,7 +220,7 @@ namespace GymSignIn.Controllers
             return exist;
         }
 
-        void CloseConnection()
+       public void CloseConnection()
         {
             string strconn = "Data Source=.;Initial Catalog=GymDataBase;Integrated Security=True";
             conn = new SqlConnection(strconn);
@@ -429,5 +429,7 @@ namespace GymSignIn.Controllers
         {
 
         }
+
+        
     }
 }

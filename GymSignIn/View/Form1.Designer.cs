@@ -40,10 +40,11 @@
             this.IDTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.IDTextBox.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.IDTextBox.BackColor = System.Drawing.Color.White;
             this.IDTextBox.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.IDTextBox.Depth = 0;
             this.IDTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IDTextBox.ForeColor = System.Drawing.Color.White;
             this.IDTextBox.Hint = "Your ID Here";
             this.IDTextBox.Location = new System.Drawing.Point(106, 157);
             this.IDTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);

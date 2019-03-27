@@ -81,6 +81,13 @@ namespace GymSignIn.Model
         }
 
         //Create property that hold a image.
+        private byte[] image;
+
+        public byte[] Image
+        {
+            get { return image; }
+            set { image = value; }
+        }
 
 
     }

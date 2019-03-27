@@ -37,6 +37,18 @@
     </Win32Resource>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>..\..\..\..\Desktop\STS\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>..\..\..\..\Desktop\STS\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>..\..\..\..\Desktop\STS\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="DarrenLee.Media">
+      <HintPath>..\..\..\..\Desktop\STS\DarrenLee.Media.dll</HintPath>
+    </Reference>
     <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
     </Reference>
@@ -76,12 +88,6 @@
     </Compile>
     <Compile Include="View\AlreadySignMsgBox.Designer.cs">
       <DependentUpon>AlreadySignMsgBox.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\DataForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\DataForm.Designer.cs">
-      <DependentUpon>DataForm.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Form1.cs">
       <SubType>Form</SubType>
@@ -147,9 +153,6 @@
     </Compile>
     <EmbeddedResource Include="View\AlreadySignMsgBox.resx">
       <DependentUpon>AlreadySignMsgBox.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\DataForm.resx">
-      <DependentUpon>DataForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

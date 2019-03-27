@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gymDataBaseDataSet3 = new GymSignIn.GymDataBaseDataSet3();
             this.tableTableAdapter = new GymSignIn.GymDataBaseDataSet3TableAdapters.TableTableAdapter();
@@ -60,6 +60,20 @@
             this.firmsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.firmsTableAdapter1 = new GymSignIn.GymDataBaseDataSet8TableAdapters.FirmsTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.firmsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.gymDataBaseDataSet9 = new GymSignIn.GymDataBaseDataSet9();
+            this.firmsTableAdapter2 = new GymSignIn.GymDataBaseDataSet9TableAdapters.FirmsTableAdapter();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.materialRaisedButton7 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lstlb = new System.Windows.Forms.Label();
+            this.stdlb = new System.Windows.Forms.Label();
+            this.emaillb = new System.Windows.Forms.Label();
+            this.idlb = new System.Windows.Forms.Label();
+            this.phonelb = new System.Windows.Forms.Label();
+            this.namlb = new System.Windows.Forms.Label();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,11 +82,8 @@
             this.startDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.typePlanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.firmsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.gymDataBaseDataSet9 = new GymSignIn.GymDataBaseDataSet9();
-            this.firmsTableAdapter2 = new GymSignIn.GymDataBaseDataSet9TableAdapters.FirmsTableAdapter();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.paystatuslb = new System.Windows.Forms.Label();
+            this.memlb = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gymDataBaseDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.firmsBindingSource)).BeginInit();
@@ -89,6 +100,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.firmsBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gymDataBaseDataSet9)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableBindingSource
@@ -108,7 +121,7 @@
             // button1
             // 
             this.button1.Depth = 0;
-            this.button1.Location = new System.Drawing.Point(850, 490);
+            this.button1.Location = new System.Drawing.Point(1143, 490);
             this.button1.MouseState = MaterialSkin.MouseState.HOVER;
             this.button1.Name = "button1";
             this.button1.Primary = true;
@@ -201,6 +214,7 @@
             // 
             // materialRaisedButton4
             // 
+            this.materialRaisedButton4.BackColor = System.Drawing.Color.Bisque;
             this.materialRaisedButton4.Depth = 0;
             this.materialRaisedButton4.Location = new System.Drawing.Point(330, 87);
             this.materialRaisedButton4.MouseState = MaterialSkin.MouseState.HOVER;
@@ -209,15 +223,16 @@
             this.materialRaisedButton4.Size = new System.Drawing.Size(94, 41);
             this.materialRaisedButton4.TabIndex = 9;
             this.materialRaisedButton4.Text = "Find";
-            this.materialRaisedButton4.UseVisualStyleBackColor = true;
+            this.materialRaisedButton4.UseVisualStyleBackColor = false;
             this.materialRaisedButton4.Click += new System.EventHandler(this.materialRaisedButton4_Click);
             // 
             // IDTextBox
             // 
-            this.IDTextBox.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.IDTextBox.BackColor = System.Drawing.Color.White;
             this.IDTextBox.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.IDTextBox.Depth = 0;
-            this.IDTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IDTextBox.Font = new System.Drawing.Font("Microsoft Tai Le", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IDTextBox.ForeColor = System.Drawing.Color.White;
             this.IDTextBox.Hint = "Client ID Here";
             this.IDTextBox.Location = new System.Drawing.Point(12, 110);
             this.IDTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -287,18 +302,18 @@
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
@@ -310,31 +325,168 @@
             this.phoneDataGridViewTextBoxColumn,
             this.typePlanDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.firmsBindingSource2;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView1.Location = new System.Drawing.Point(12, 154);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView1.Size = new System.Drawing.Size(932, 271);
             this.dataGridView1.TabIndex = 13;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // firmsBindingSource2
+            // 
+            this.firmsBindingSource2.DataMember = "Firms";
+            this.firmsBindingSource2.DataSource = this.gymDataBaseDataSet9;
+            // 
+            // gymDataBaseDataSet9
+            // 
+            this.gymDataBaseDataSet9.DataSetName = "GymDataBaseDataSet9";
+            this.gymDataBaseDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // firmsTableAdapter2
+            // 
+            this.firmsTableAdapter2.ClearBeforeFill = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(this.materialRaisedButton6);
+            this.groupBox1.Controls.Add(this.materialRaisedButton1);
+            this.groupBox1.Controls.Add(this.materialRaisedButton3);
+            this.groupBox1.Controls.Add(this.materialRaisedButton2);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(12, 431);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(469, 100);
+            this.groupBox1.TabIndex = 14;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Reports Controllers";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(8, 85);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(186, 21);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Find a Client Typing ID";
+            // 
+            // materialRaisedButton7
+            // 
+            this.materialRaisedButton7.Depth = 0;
+            this.materialRaisedButton7.Location = new System.Drawing.Point(617, 87);
+            this.materialRaisedButton7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton7.Name = "materialRaisedButton7";
+            this.materialRaisedButton7.Primary = true;
+            this.materialRaisedButton7.Size = new System.Drawing.Size(166, 41);
+            this.materialRaisedButton7.TabIndex = 16;
+            this.materialRaisedButton7.Text = "Export To Excel";
+            this.materialRaisedButton7.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 19);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(137, 111);
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.memlb);
+            this.groupBox2.Controls.Add(this.paystatuslb);
+            this.groupBox2.Controls.Add(this.lstlb);
+            this.groupBox2.Controls.Add(this.stdlb);
+            this.groupBox2.Controls.Add(this.emaillb);
+            this.groupBox2.Controls.Add(this.idlb);
+            this.groupBox2.Controls.Add(this.phonelb);
+            this.groupBox2.Controls.Add(this.namlb);
+            this.groupBox2.Controls.Add(this.pictureBox1);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(950, 95);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(277, 389);
+            this.groupBox2.TabIndex = 18;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Client Information";
+            // 
+            // lstlb
+            // 
+            this.lstlb.AutoSize = true;
+            this.lstlb.Location = new System.Drawing.Point(11, 263);
+            this.lstlb.Name = "lstlb";
+            this.lstlb.Size = new System.Drawing.Size(114, 20);
+            this.lstlb.TabIndex = 19;
+            this.lstlb.Text = "Last Sign Time";
+            // 
+            // stdlb
+            // 
+            this.stdlb.AutoSize = true;
+            this.stdlb.Location = new System.Drawing.Point(11, 215);
+            this.stdlb.Name = "stdlb";
+            this.stdlb.Size = new System.Drawing.Size(74, 20);
+            this.stdlb.TabIndex = 21;
+            this.stdlb.Text = "StarDate";
+            // 
+            // emaillb
+            // 
+            this.emaillb.AutoSize = true;
+            this.emaillb.Location = new System.Drawing.Point(11, 175);
+            this.emaillb.Name = "emaillb";
+            this.emaillb.Size = new System.Drawing.Size(48, 20);
+            this.emaillb.TabIndex = 19;
+            this.emaillb.Text = "Email";
+            // 
+            // idlb
+            // 
+            this.idlb.AutoSize = true;
+            this.idlb.Location = new System.Drawing.Point(149, 22);
+            this.idlb.Name = "idlb";
+            this.idlb.Size = new System.Drawing.Size(70, 20);
+            this.idlb.TabIndex = 20;
+            this.idlb.Text = "Client ID";
+            // 
+            // phonelb
+            // 
+            this.phonelb.AutoSize = true;
+            this.phonelb.Location = new System.Drawing.Point(11, 133);
+            this.phonelb.Name = "phonelb";
+            this.phonelb.Size = new System.Drawing.Size(55, 20);
+            this.phonelb.TabIndex = 19;
+            this.phonelb.Text = "Phone";
+            // 
+            // namlb
+            // 
+            this.namlb.AutoSize = true;
+            this.namlb.Location = new System.Drawing.Point(149, 59);
+            this.namlb.Name = "namlb";
+            this.namlb.Size = new System.Drawing.Size(95, 20);
+            this.namlb.TabIndex = 18;
+            this.namlb.Text = "Client Name";
             // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "ID";
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             this.idDataGridViewTextBoxColumn.Width = 130;
             // 
@@ -386,53 +538,32 @@
             this.typePlanDataGridViewTextBoxColumn.Name = "typePlanDataGridViewTextBoxColumn";
             this.typePlanDataGridViewTextBoxColumn.Width = 130;
             // 
-            // firmsBindingSource2
+            // paystatuslb
             // 
-            this.firmsBindingSource2.DataMember = "Firms";
-            this.firmsBindingSource2.DataSource = this.gymDataBaseDataSet9;
+            this.paystatuslb.AutoSize = true;
+            this.paystatuslb.Location = new System.Drawing.Point(11, 323);
+            this.paystatuslb.Name = "paystatuslb";
+            this.paystatuslb.Size = new System.Drawing.Size(86, 20);
+            this.paystatuslb.TabIndex = 22;
+            this.paystatuslb.Text = "Pay Status";
             // 
-            // gymDataBaseDataSet9
+            // memlb
             // 
-            this.gymDataBaseDataSet9.DataSetName = "GymDataBaseDataSet9";
-            this.gymDataBaseDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // firmsTableAdapter2
-            // 
-            this.firmsTableAdapter2.ClearBeforeFill = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.materialRaisedButton6);
-            this.groupBox1.Controls.Add(this.materialRaisedButton1);
-            this.groupBox1.Controls.Add(this.materialRaisedButton3);
-            this.groupBox1.Controls.Add(this.materialRaisedButton2);
-            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 431);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(469, 100);
-            this.groupBox1.TabIndex = 14;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Reports Controllers";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 85);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(186, 21);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Find a Client Typing ID";
+            this.memlb.AutoSize = true;
+            this.memlb.Location = new System.Drawing.Point(149, 99);
+            this.memlb.Name = "memlb";
+            this.memlb.Size = new System.Drawing.Size(96, 20);
+            this.memlb.TabIndex = 23;
+            this.memlb.Text = "Membership";
             // 
             // TodaysSignIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(956, 541);
+            this.ClientSize = new System.Drawing.Size(1249, 540);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.materialRaisedButton7);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
@@ -462,6 +593,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.firmsBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gymDataBaseDataSet9)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -498,6 +632,17 @@
         private GymDataBaseDataSet9 gymDataBaseDataSet9;
         private System.Windows.Forms.BindingSource firmsBindingSource2;
         private GymDataBaseDataSet9TableAdapters.FirmsTableAdapter firmsTableAdapter2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label1;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton7;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label lstlb;
+        private System.Windows.Forms.Label stdlb;
+        private System.Windows.Forms.Label emaillb;
+        private System.Windows.Forms.Label idlb;
+        private System.Windows.Forms.Label phonelb;
+        private System.Windows.Forms.Label namlb;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
@@ -506,7 +651,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn startDateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn typePlanDataGridViewTextBoxColumn;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label paystatuslb;
+        private System.Windows.Forms.Label memlb;
     }
 }
