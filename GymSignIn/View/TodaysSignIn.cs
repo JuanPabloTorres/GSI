@@ -147,6 +147,7 @@ namespace GymSignIn
                 {
 
                     emaillb.Text = "Email:" + "Inser email";
+                    string x;
                 }
               namlb.Text= "Name:"+dataGridView1.Rows[rowIndex].Cells[2].Value.ToString();
 
