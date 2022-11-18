@@ -29,94 +29,47 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gymDataBaseDataSet3 = new GymSignIn.GymDataBaseDataSet3();
-            this.tableTableAdapter = new GymSignIn.GymDataBaseDataSet3TableAdapters.TableTableAdapter();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button1 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.firmsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gymDataBaseDataSet6 = new GymSignIn.GymDataBaseDataSet6();
-            this.todaySignBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.gymDataBaseDataSet5 = new GymSignIn.GymDataBaseDataSet5();
-            this.todaySignBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gymDataBaseDataSet4 = new GymSignIn.GymDataBaseDataSet4();
-            this.todaySignTableAdapter = new GymSignIn.GymDataBaseDataSet4TableAdapters.TodaySignTableAdapter();
-            this.todaySignTableAdapter1 = new GymSignIn.GymDataBaseDataSet5TableAdapters.TodaySignTableAdapter();
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.firmsTableAdapter = new GymSignIn.GymDataBaseDataSet6TableAdapters.FirmsTableAdapter();
             this.materialRaisedButton3 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton4 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.IDTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialRaisedButton5 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton6 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.gymDataBaseDataSet7 = new GymSignIn.GymDataBaseDataSet7();
-            this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clientsTableAdapter = new GymSignIn.GymDataBaseDataSet7TableAdapters.ClientsTableAdapter();
-            this.gymDataBaseDataSet8 = new GymSignIn.GymDataBaseDataSet8();
+         
             this.firmsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.firmsTableAdapter1 = new GymSignIn.GymDataBaseDataSet8TableAdapters.FirmsTableAdapter();
+       
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.firmsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.gymDataBaseDataSet9 = new GymSignIn.GymDataBaseDataSet9();
-            this.firmsTableAdapter2 = new GymSignIn.GymDataBaseDataSet9TableAdapters.FirmsTableAdapter();
+       
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.materialRaisedButton7 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.memlb = new System.Windows.Forms.Label();
+            this.paystatuslb = new System.Windows.Forms.Label();
             this.lstlb = new System.Windows.Forms.Label();
             this.stdlb = new System.Windows.Forms.Label();
             this.emaillb = new System.Windows.Forms.Label();
             this.idlb = new System.Windows.Forms.Label();
             this.phonelb = new System.Windows.Forms.Label();
             this.namlb = new System.Windows.Forms.Label();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.signTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.payStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.startDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.typePlanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.paystatuslb = new System.Windows.Forms.Label();
-            this.memlb = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gymDataBaseDataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.firmsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gymDataBaseDataSet6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.todaySignBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gymDataBaseDataSet5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.todaySignBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gymDataBaseDataSet4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gymDataBaseDataSet7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gymDataBaseDataSet8)).BeginInit();
+     
             ((System.ComponentModel.ISupportInitialize)(this.firmsBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.firmsBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gymDataBaseDataSet9)).BeginInit();
+         
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // tableBindingSource
-            // 
-            this.tableBindingSource.DataMember = "Table";
-            this.tableBindingSource.DataSource = this.gymDataBaseDataSet3;
-            // 
-            // gymDataBaseDataSet3
-            // 
-            this.gymDataBaseDataSet3.DataSetName = "GymDataBaseDataSet3";
-            this.gymDataBaseDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tableTableAdapter
-            // 
-            this.tableTableAdapter.ClearBeforeFill = true;
             // 
             // button1
             // 
@@ -131,44 +84,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // firmsBindingSource
-            // 
-            this.firmsBindingSource.DataMember = "Firms";
-            this.firmsBindingSource.DataSource = this.gymDataBaseDataSet6;
-            // 
-            // gymDataBaseDataSet6
-            // 
-            this.gymDataBaseDataSet6.DataSetName = "GymDataBaseDataSet6";
-            this.gymDataBaseDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // todaySignBindingSource1
-            // 
-            this.todaySignBindingSource1.DataMember = "TodaySign";
-            this.todaySignBindingSource1.DataSource = this.gymDataBaseDataSet5;
-            // 
-            // gymDataBaseDataSet5
-            // 
-            this.gymDataBaseDataSet5.DataSetName = "GymDataBaseDataSet5";
-            this.gymDataBaseDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // todaySignBindingSource
-            // 
-            this.todaySignBindingSource.DataMember = "TodaySign";
-            this.todaySignBindingSource.DataSource = this.gymDataBaseDataSet4;
-            // 
-            // gymDataBaseDataSet4
-            // 
-            this.gymDataBaseDataSet4.DataSetName = "GymDataBaseDataSet4";
-            this.gymDataBaseDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // todaySignTableAdapter
-            // 
-            this.todaySignTableAdapter.ClearBeforeFill = true;
-            // 
-            // todaySignTableAdapter1
-            // 
-            this.todaySignTableAdapter1.ClearBeforeFill = true;
-            // 
             // materialRaisedButton1
             // 
             this.materialRaisedButton1.Depth = 0;
@@ -181,10 +96,6 @@
             this.materialRaisedButton1.Text = "Today";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
             this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
-            // 
-            // firmsTableAdapter
-            // 
-            this.firmsTableAdapter.ClearBeforeFill = true;
             // 
             // materialRaisedButton3
             // 
@@ -272,96 +183,77 @@
             this.materialRaisedButton6.UseVisualStyleBackColor = true;
             this.materialRaisedButton6.Click += new System.EventHandler(this.materialRaisedButton6_Click);
             // 
-            // gymDataBaseDataSet7
-            // 
-            this.gymDataBaseDataSet7.DataSetName = "GymDataBaseDataSet7";
-            this.gymDataBaseDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // clientsBindingSource
-            // 
-            this.clientsBindingSource.DataMember = "Clients";
-            this.clientsBindingSource.DataSource = this.gymDataBaseDataSet7;
-            // 
             // clientsTableAdapter
             // 
-            this.clientsTableAdapter.ClearBeforeFill = true;
+       
             // 
             // gymDataBaseDataSet8
             // 
-            this.gymDataBaseDataSet8.DataSetName = "GymDataBaseDataSet8";
-            this.gymDataBaseDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+  
             // 
             // firmsBindingSource1
             // 
             this.firmsBindingSource1.DataMember = "Firms";
-            this.firmsBindingSource1.DataSource = this.gymDataBaseDataSet8;
+   
             // 
             // firmsTableAdapter1
             // 
-            this.firmsTableAdapter1.ClearBeforeFill = true;
+     
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.Email,
-            this.nameDataGridViewTextBoxColumn,
-            this.signTimeDataGridViewTextBoxColumn,
-            this.payStatusDataGridViewTextBoxColumn,
-            this.startDateDataGridViewTextBoxColumn,
-            this.phoneDataGridViewTextBoxColumn,
-            this.typePlanDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.firmsBindingSource2;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle7;
+            this.Email});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.Location = new System.Drawing.Point(12, 154);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridView1.ReadOnly = true;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.Size = new System.Drawing.Size(932, 271);
             this.dataGridView1.TabIndex = 13;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // firmsBindingSource2
+            // Email
             // 
-            this.firmsBindingSource2.DataMember = "Firms";
-            this.firmsBindingSource2.DataSource = this.gymDataBaseDataSet9;
+            this.Email.DataPropertyName = "email";
+            this.Email.HeaderText = "Email";
+            this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
+            // 
+            // firmsBindingSource2
+
             // 
             // gymDataBaseDataSet9
             // 
-            this.gymDataBaseDataSet9.DataSetName = "GymDataBaseDataSet9";
-            this.gymDataBaseDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // firmsTableAdapter2
-            // 
-            this.firmsTableAdapter2.ClearBeforeFill = true;
-            // 
-            // groupBox1
+       
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.materialRaisedButton6);
@@ -429,6 +321,24 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Client Information";
             // 
+            // memlb
+            // 
+            this.memlb.AutoSize = true;
+            this.memlb.Location = new System.Drawing.Point(149, 99);
+            this.memlb.Name = "memlb";
+            this.memlb.Size = new System.Drawing.Size(96, 20);
+            this.memlb.TabIndex = 23;
+            this.memlb.Text = "Membership";
+            // 
+            // paystatuslb
+            // 
+            this.paystatuslb.AutoSize = true;
+            this.paystatuslb.Location = new System.Drawing.Point(11, 323);
+            this.paystatuslb.Name = "paystatuslb";
+            this.paystatuslb.Size = new System.Drawing.Size(86, 20);
+            this.paystatuslb.TabIndex = 22;
+            this.paystatuslb.Text = "Pay Status";
+            // 
             // lstlb
             // 
             this.lstlb.AutoSize = true;
@@ -483,79 +393,6 @@
             this.namlb.TabIndex = 18;
             this.namlb.Text = "Client Name";
             // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.Width = 130;
-            // 
-            // Email
-            // 
-            this.Email.DataPropertyName = "email";
-            this.Email.HeaderText = "Email";
-            this.Email.Name = "Email";
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // signTimeDataGridViewTextBoxColumn
-            // 
-            this.signTimeDataGridViewTextBoxColumn.DataPropertyName = "SignTime";
-            this.signTimeDataGridViewTextBoxColumn.HeaderText = "SignTime";
-            this.signTimeDataGridViewTextBoxColumn.Name = "signTimeDataGridViewTextBoxColumn";
-            this.signTimeDataGridViewTextBoxColumn.Width = 180;
-            // 
-            // payStatusDataGridViewTextBoxColumn
-            // 
-            this.payStatusDataGridViewTextBoxColumn.DataPropertyName = "PayStatus";
-            this.payStatusDataGridViewTextBoxColumn.HeaderText = "PayStatus";
-            this.payStatusDataGridViewTextBoxColumn.Name = "payStatusDataGridViewTextBoxColumn";
-            this.payStatusDataGridViewTextBoxColumn.Width = 130;
-            // 
-            // startDateDataGridViewTextBoxColumn
-            // 
-            this.startDateDataGridViewTextBoxColumn.DataPropertyName = "StartDate";
-            this.startDateDataGridViewTextBoxColumn.HeaderText = "StartDate";
-            this.startDateDataGridViewTextBoxColumn.Name = "startDateDataGridViewTextBoxColumn";
-            this.startDateDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // phoneDataGridViewTextBoxColumn
-            // 
-            this.phoneDataGridViewTextBoxColumn.DataPropertyName = "Phone";
-            this.phoneDataGridViewTextBoxColumn.HeaderText = "Phone";
-            this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
-            this.phoneDataGridViewTextBoxColumn.Width = 130;
-            // 
-            // typePlanDataGridViewTextBoxColumn
-            // 
-            this.typePlanDataGridViewTextBoxColumn.DataPropertyName = "TypePlan";
-            this.typePlanDataGridViewTextBoxColumn.HeaderText = "TypePlan";
-            this.typePlanDataGridViewTextBoxColumn.Name = "typePlanDataGridViewTextBoxColumn";
-            this.typePlanDataGridViewTextBoxColumn.Width = 130;
-            // 
-            // paystatuslb
-            // 
-            this.paystatuslb.AutoSize = true;
-            this.paystatuslb.Location = new System.Drawing.Point(11, 323);
-            this.paystatuslb.Name = "paystatuslb";
-            this.paystatuslb.Size = new System.Drawing.Size(86, 20);
-            this.paystatuslb.TabIndex = 22;
-            this.paystatuslb.Text = "Pay Status";
-            // 
-            // memlb
-            // 
-            this.memlb.AutoSize = true;
-            this.memlb.Location = new System.Drawing.Point(149, 99);
-            this.memlb.Name = "memlb";
-            this.memlb.Size = new System.Drawing.Size(96, 20);
-            this.memlb.TabIndex = 23;
-            this.memlb.Text = "Membership";
-            // 
             // TodaysSignIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -577,21 +414,11 @@
             this.Text = "Sign Manual";
             this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Load += new System.EventHandler(this.TodaysSignIn_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gymDataBaseDataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.firmsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gymDataBaseDataSet6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.todaySignBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gymDataBaseDataSet5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.todaySignBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gymDataBaseDataSet4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gymDataBaseDataSet7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gymDataBaseDataSet8)).EndInit();
+       
             ((System.ComponentModel.ISupportInitialize)(this.firmsBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.firmsBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gymDataBaseDataSet9)).EndInit();
+           
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
@@ -602,36 +429,21 @@
         }
 
         #endregion
-        private GymDataBaseDataSet3 gymDataBaseDataSet3;
-        private System.Windows.Forms.BindingSource tableBindingSource;
-        private GymDataBaseDataSet3TableAdapters.TableTableAdapter tableTableAdapter;
         private MaterialSkin.Controls.MaterialRaisedButton button1;
-        private GymDataBaseDataSet4 gymDataBaseDataSet4;
-        private System.Windows.Forms.BindingSource todaySignBindingSource;
-        private GymDataBaseDataSet4TableAdapters.TodaySignTableAdapter todaySignTableAdapter;
-        private GymDataBaseDataSet5 gymDataBaseDataSet5;
-        private System.Windows.Forms.BindingSource todaySignBindingSource1;
-        private GymDataBaseDataSet5TableAdapters.TodaySignTableAdapter todaySignTableAdapter1;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
-        private GymDataBaseDataSet6 gymDataBaseDataSet6;
-        private System.Windows.Forms.BindingSource firmsBindingSource;
-        private GymDataBaseDataSet6TableAdapters.FirmsTableAdapter firmsTableAdapter;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton3;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton2;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton4;
         private MaterialSkin.Controls.MaterialSingleLineTextField IDTextBox;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton5;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton6;
-        private GymDataBaseDataSet7 gymDataBaseDataSet7;
-        private System.Windows.Forms.BindingSource clientsBindingSource;
-        private GymDataBaseDataSet7TableAdapters.ClientsTableAdapter clientsTableAdapter;
-        private GymDataBaseDataSet8 gymDataBaseDataSet8;
+  
         private System.Windows.Forms.BindingSource firmsBindingSource1;
-        private GymDataBaseDataSet8TableAdapters.FirmsTableAdapter firmsTableAdapter1;
+   
         private System.Windows.Forms.DataGridView dataGridView1;
-        private GymDataBaseDataSet9 gymDataBaseDataSet9;
+
         private System.Windows.Forms.BindingSource firmsBindingSource2;
-        private GymDataBaseDataSet9TableAdapters.FirmsTableAdapter firmsTableAdapter2;
+    
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton7;
@@ -643,14 +455,7 @@
         private System.Windows.Forms.Label idlb;
         private System.Windows.Forms.Label phonelb;
         private System.Windows.Forms.Label namlb;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn signTimeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn payStatusDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn startDateDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn typePlanDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label paystatuslb;
         private System.Windows.Forms.Label memlb;
     }

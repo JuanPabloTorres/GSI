@@ -23,16 +23,7 @@ namespace GymSignIn
 
         private void TodaysSignIn_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'gymDataBaseDataSet9.Firms' table. You can move, or remove it, as needed.
-            this.firmsTableAdapter2.Fill(this.gymDataBaseDataSet9.Firms);
-            // TODO: This line of code loads data into the 'gymDataBaseDataSet8.Firms' table. You can move, or remove it, as needed.
-            this.firmsTableAdapter1.Fill(this.gymDataBaseDataSet8.Firms);
-            // TODO: This line of code loads data into the 'gymDataBaseDataSet7.Clients' table. You can move, or remove it, as needed.
-            this.clientsTableAdapter.Fill(this.gymDataBaseDataSet7.Clients);
-            // TODO: This line of code loads data into the 'gymDataBaseDataSet6.Firms' table. You can move, or remove it, as needed.
-            this.firmsTableAdapter.Fill(this.gymDataBaseDataSet6.Firms);
-            // TODO: This line of code loads data into the 'gymDataBaseDataSet5.TodaySign' table. You can move, or remove it, as needed.
-            this.todaySignTableAdapter1.Fill(this.gymDataBaseDataSet5.TodaySign);
+    
 
 
         }

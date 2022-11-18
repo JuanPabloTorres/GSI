@@ -68,21 +68,6 @@
   <ItemGroup>
     <Compile Include="Controllers\EmailController.cs" />
     <Compile Include="Controllers\SqlController.cs" />
-    <Compile Include="GymDataBaseDataSet7.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GymDataBaseDataSet7.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="GymDataBaseDataSet8.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GymDataBaseDataSet8.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="GymDataBaseDataSet9.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GymDataBaseDataSet9.xsd</DependentUpon>
-    </Compile>
     <Compile Include="View\AlreadySignMsgBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,41 +79,6 @@
     </Compile>
     <Compile Include="View\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GymDataBaseDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GymDataBaseDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="GymDataBaseDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GymDataBaseDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="GymDataBaseDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GymDataBaseDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="GymDataBaseDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GymDataBaseDataSet3.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="GymDataBaseDataSet4.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GymDataBaseDataSet4.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="GymDataBaseDataSet5.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GymDataBaseDataSet5.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="GymDataBaseDataSet6.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GymDataBaseDataSet6.xsd</DependentUpon>
     </Compile>
     <Compile Include="Model\Client.cs" />
     <Compile Include="View\MsgID.cs">
@@ -176,116 +126,6 @@
     <EmbeddedResource Include="View\TodaysSignIn.resx">
       <DependentUpon>TodaysSignIn.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="GymDataBaseDataSet.xsc">
-      <DependentUpon>GymDataBaseDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="GymDataBaseDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>GymDataBaseDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="GymDataBaseDataSet.xss">
-      <DependentUpon>GymDataBaseDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="GymDataBaseDataSet1.xsc">
-      <DependentUpon>GymDataBaseDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="GymDataBaseDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>GymDataBaseDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="GymDataBaseDataSet1.xss">
-      <DependentUpon>GymDataBaseDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="GymDataBaseDataSet2.xsc">
-      <DependentUpon>GymDataBaseDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="GymDataBaseDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>GymDataBaseDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="GymDataBaseDataSet2.xss">
-      <DependentUpon>GymDataBaseDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="GymDataBaseDataSet3.xsc">
-      <DependentUpon>GymDataBaseDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="GymDataBaseDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>GymDataBaseDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="GymDataBaseDataSet3.xss">
-      <DependentUpon>GymDataBaseDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="GymDataBaseDataSet4.xsc">
-      <DependentUpon>GymDataBaseDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="GymDataBaseDataSet4.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>GymDataBaseDataSet4.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="GymDataBaseDataSet4.xss">
-      <DependentUpon>GymDataBaseDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="GymDataBaseDataSet5.xsc">
-      <DependentUpon>GymDataBaseDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="GymDataBaseDataSet5.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>GymDataBaseDataSet5.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="GymDataBaseDataSet5.xss">
-      <DependentUpon>GymDataBaseDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="GymDataBaseDataSet6.xsc">
-      <DependentUpon>GymDataBaseDataSet6.xsd</DependentUpon>
-    </None>
-    <None Include="GymDataBaseDataSet6.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>GymDataBaseDataSet6.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="GymDataBaseDataSet6.xss">
-      <DependentUpon>GymDataBaseDataSet6.xsd</DependentUpon>
-    </None>
-    <None Include="GymDataBaseDataSet7.xsc">
-      <DependentUpon>GymDataBaseDataSet7.xsd</DependentUpon>
-    </None>
-    <None Include="GymDataBaseDataSet7.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>GymDataBaseDataSet7.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="GymDataBaseDataSet7.xss">
-      <DependentUpon>GymDataBaseDataSet7.xsd</DependentUpon>
-    </None>
-    <None Include="GymDataBaseDataSet8.xsc">
-      <DependentUpon>GymDataBaseDataSet8.xsd</DependentUpon>
-    </None>
-    <None Include="GymDataBaseDataSet8.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>GymDataBaseDataSet8.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="GymDataBaseDataSet8.xss">
-      <DependentUpon>GymDataBaseDataSet8.xsd</DependentUpon>
-    </None>
-    <None Include="GymDataBaseDataSet9.xsc">
-      <DependentUpon>GymDataBaseDataSet9.xsd</DependentUpon>
-    </None>
-    <None Include="GymDataBaseDataSet9.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>GymDataBaseDataSet9.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="GymDataBaseDataSet9.xss">
-      <DependentUpon>GymDataBaseDataSet9.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

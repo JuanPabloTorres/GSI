@@ -3,28 +3,25 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GymSignIn.Controllers
 {
     public class SqlController
     {
-        SqlCommand cmd;
-        SqlConnection conn;
-        SqlDataAdapter adapter;
+        private SqlCommand cmd;
 
-      public  void OpenConnection()
+        private SqlConnection conn;
+        private SqlDataAdapter adapter;
+
+        public void OpenConnection ()
         {
             string strconn = "Data Source=.;Initial Catalog=GymDataBase;Integrated Security=True";
             conn = new SqlConnection(strconn);
             conn.Open();
         }
 
-       public void Insert(Client clientSign)
+        public void Insert (Client clientSign)
         {
-
             OpenConnection();
             DateTime daytoPay = new DateTime();
             daytoPay = Convert.ToDateTime(clientSign.StartDate);
@@ -32,18 +29,16 @@ namespace GymSignIn.Controllers
             int daytopay = daytoPay.Day;
             string nextM = daytoPay.AddMonths(1).ToString().Substring(0, 10);
 
-
             string todayIs = DateTime.Today.ToString().Substring(0, 10);
 
             int today = DateTime.Today.Day;
 
             string month = "Monthly";
             string sub = clientSign.TypePlan.Substring(0, month.Length);
-            if (sub == "Monthly")
+            if( sub == "Monthly" )
             {
-                if (today == daytopay && (daytoPay.Month != DateTime.Today.Month || daytoPay.Month == DateTime.Today.Month))
+                if( today == daytopay && ( daytoPay.Month != DateTime.Today.Month || daytoPay.Month == DateTime.Today.Month ) )
                 {
-
                     clientSign.PayStatus = "To pay";
 
                     string updatequery = "UPDATE Clients SET PayStatus=@paystatus WHERE ID=@ID";
@@ -53,14 +48,13 @@ namespace GymSignIn.Controllers
                     updatecommand.Parameters.AddWithValue("@paystatus", clientSign.PayStatus);
                     updatecommand.Parameters.AddWithValue("@ID", clientSign.ID);
 
-
                     updatecommand.ExecuteNonQuery();
                 }
                 else
                 {
                     string good = "Good";
                     string payStatus = clientSign.PayStatus.Substring(0, good.Length);
-                    if (payStatus != "Good")
+                    if( payStatus != "Good" )
                     {
                         clientSign.PayStatus = "Pending";
                     }
@@ -72,16 +66,15 @@ namespace GymSignIn.Controllers
                     updatecommand.Parameters.AddWithValue("@paystatus", clientSign.PayStatus);
                     updatecommand.Parameters.AddWithValue("@ID", clientSign.ID);
 
-
                     updatecommand.ExecuteNonQuery();
                 }
             }
             string annual = "Annual";
             string sub2 = clientSign.TypePlan.Substring(0, annual.Length);
 
-            if (sub2 == "Annual")
+            if( sub2 == "Annual" )
             {
-                if (daytoPay.Year < DateTime.Today.Year && daytoPay.Day == DateTime.Today.Day && daytoPay.Month == DateTime.Today.Month)
+                if( daytoPay.Year < DateTime.Today.Year && daytoPay.Day == DateTime.Today.Day && daytoPay.Month == DateTime.Today.Month )
                 {
                     clientSign.PayStatus = "To pay";
 
@@ -91,7 +84,6 @@ namespace GymSignIn.Controllers
 
                     updatecommand.Parameters.AddWithValue("@paystatus", clientSign.PayStatus);
                     updatecommand.Parameters.AddWithValue("@ID", clientSign.ID);
-
 
                     updatecommand.ExecuteNonQuery();
                 }
@@ -104,7 +96,6 @@ namespace GymSignIn.Controllers
 
                     updatecommand.Parameters.AddWithValue("@paystatus", clientSign.PayStatus);
                     updatecommand.Parameters.AddWithValue("@ID", clientSign.ID);
-
 
                     updatecommand.ExecuteNonQuery();
                 }
@@ -125,9 +116,8 @@ namespace GymSignIn.Controllers
             conn.Close();
         }
 
-       public void SignInCheck(string IDTextBox)
+        public void SignInCheck (string IDTextBox)
         {
-
             OpenConnection();
 
             string selectquery = " SELECT * FROM Clients";
@@ -136,9 +126,9 @@ namespace GymSignIn.Controllers
 
             SqlDataReader rd = cmd.ExecuteReader();
 
-            while (rd.Read())
+            while( rd.Read() )
             {
-                if (rd[0].ToString() == IDTextBox)
+                if( rd[0].ToString() == IDTextBox )
                 {
                     Client clientSign = new Client();
 
@@ -149,18 +139,16 @@ namespace GymSignIn.Controllers
                     clientSign.TypePlan = rd[5].ToString();
                     clientSign.Email = rd[6].ToString();
 
-                    if (rd[4].ToString() != null)
+                    if( rd[4].ToString() != null )
                     {
                         clientSign.PayStatus = rd[4].ToString();
                     }
                     rd.Close();
 
-                    if (AlreadySign(IDTextBox))
+                    if( AlreadySign(IDTextBox) )
                     {
-
                         AlreadySignMsgBox msgBox = new AlreadySignMsgBox();
                         msgBox.ShowDialog();
-
                     }
                     else
                     {
@@ -173,17 +161,14 @@ namespace GymSignIn.Controllers
 
                     conn.Close();
                     break;
-
                 }
-
             }
             IDTextBox = string.Empty;
 
             conn.Close();
-
         }
 
-        bool AlreadySign(string IDTextBox)
+        private bool AlreadySign (string IDTextBox)
         {
             bool exist = false;
 
@@ -193,7 +178,7 @@ namespace GymSignIn.Controllers
 
             SqlDataReader rd = cmd.ExecuteReader();
 
-            while (rd.Read())
+            while( rd.Read() )
             {
                 string date = rd[2].ToString();
 
@@ -202,15 +187,14 @@ namespace GymSignIn.Controllers
                 string today = DateTime.Today.ToString();
                 string firsten = today.Substring(0, 10);
                 today = firsten;
-                if (today[0] == '0')
+                if( today[0] == '0' )
                 {
                     string temp = today.Remove(0, 1);
                     today = temp;
                 }
 
-                if (rd[0].ToString() == IDTextBox && mdyString == today)
+                if( rd[0].ToString() == IDTextBox && mdyString == today )
                 {
-
                     exist = true;
                     break;
                 }
@@ -220,14 +204,14 @@ namespace GymSignIn.Controllers
             return exist;
         }
 
-       public void CloseConnection()
+        public void CloseConnection ()
         {
             string strconn = "Data Source=.;Initial Catalog=GymDataBase;Integrated Security=True";
             conn = new SqlConnection(strconn);
             conn.Close();
         }
 
-       public void UpdateStatusFromClientsTo(int cliendId)
+        public void UpdateStatusFromClientsTo (int cliendId)
         {
             OpenConnection();
             string updateStatusquery = "UPDATE Clients SET PayStatus=@paystatus WHERE ID=@ID";
@@ -242,11 +226,9 @@ namespace GymSignIn.Controllers
             cmd.ExecuteNonQuery();
 
             CloseConnection();
-
-            
         }
 
-        public void UpdatesStatusFromFirmsTo(int clientId)
+        public void UpdatesStatusFromFirmsTo (int clientId)
         {
             OpenConnection();
             string updateStatusquery = "UPDATE Firms SET PayStatus=@paystatus WHERE ID=@ID";
@@ -255,7 +237,6 @@ namespace GymSignIn.Controllers
 
             cmd.Parameters.AddWithValue("@paystatus", "Good");
 
-            
             cmd.Parameters.AddWithValue("@ID", clientId);
 
             cmd.ExecuteNonQuery();
@@ -263,7 +244,7 @@ namespace GymSignIn.Controllers
             CloseConnection();
         }
 
-        public List<Client> GetAllTodaySigns()
+        public List<Client> GetAllTodaySigns ()
         {
             OpenConnection();
             string selectquery = "SELECT * FROM [Firms]";
@@ -274,7 +255,7 @@ namespace GymSignIn.Controllers
 
             List<Client> todaysClients = new List<Client>();
 
-            while (rd.Read())
+            while( rd.Read() )
             {
                 string date = rd[2].ToString();
 
@@ -283,14 +264,13 @@ namespace GymSignIn.Controllers
                 string today = DateTime.Today.ToString();
                 string firsten = today.Substring(0, 10);
                 today = firsten;
-                if (today[0] == '0')
+                if( today[0] == '0' )
                 {
                     string temp = today.Remove(0, 1);
                     today = temp;
                 }
 
-
-                if (mdyString == today)
+                if( mdyString == today )
                 {
                     Client todayClient = new Client();
                     todayClient.ID = Convert.ToInt32(rd[0]);
@@ -305,11 +285,10 @@ namespace GymSignIn.Controllers
                 }
             }
 
-
-          return todaysClients;
+            return todaysClients;
         }
 
-        public DataTable GetAllClients()
+        public DataTable GetAllClients ()
         {
             OpenConnection();
 
@@ -321,7 +300,6 @@ namespace GymSignIn.Controllers
 
             DataTable dt = new DataTable();
 
-
             adapter.Fill(dt);
 
             CloseConnection();
@@ -329,8 +307,7 @@ namespace GymSignIn.Controllers
             return dt;
         }
 
-
-        public DataTable GetAllFirms()
+        public DataTable GetAllFirms ()
         {
             OpenConnection();
 
@@ -348,7 +325,8 @@ namespace GymSignIn.Controllers
 
             return dt;
         }
-        public DataTable FindThis(string Id)
+
+        public DataTable FindThis (string Id)
         {
             OpenConnection();
 
@@ -360,28 +338,23 @@ namespace GymSignIn.Controllers
 
             DataTable dt = new DataTable();
 
-
             adapter.Fill(dt);
 
             CloseConnection();
 
             return dt;
-
-
         }
-        public DataTable SelectNotGoodPayStatus()
+
+        public DataTable SelectNotGoodPayStatus ()
         {
             OpenConnection();
 
             string selectquery = "SELECT * FROM Clients WHERE PayStatus =@PayStatus OR PayStatus=@PS";
 
-
             cmd = new SqlCommand(selectquery, conn);
 
             cmd.Parameters.AddWithValue("@PayStatus", "To pay");
             cmd.Parameters.AddWithValue("@PS", "Pending");
-
-
 
             adapter = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -391,7 +364,7 @@ namespace GymSignIn.Controllers
             return dt;
         }
 
-        public Client GetInformationOfThis(string clientid)
+        public Client GetInformationOfThis (string clientid)
         {
             Client client = new Client();
             OpenConnection();
@@ -401,12 +374,10 @@ namespace GymSignIn.Controllers
 
             SqlDataReader rd = cmd.ExecuteReader();
 
-            while (rd.Read())
+            while( rd.Read() )
             {
-                if (rd[0].ToString() == clientid)
+                if( rd[0].ToString() == clientid )
                 {
-
-
                     client.ID = Convert.ToInt32(rd[0]);
                     client.Name = rd[1].ToString();
                     client.Phone = rd[2].ToString();
@@ -419,17 +390,11 @@ namespace GymSignIn.Controllers
                 }
             }
 
-
             return client;
-
-
-
         }
-        public SqlController()
+
+        public SqlController ()
         {
-
         }
-
-        
     }
 }

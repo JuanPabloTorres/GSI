@@ -1,17 +1,8 @@
 ﻿using GymSignIn.Model;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.Sql;
 using System.Data.SqlClient;
-using System.Text.RegularExpressions;
-using DarrenLee.Media;
 using System.IO;
 
 namespace GymSignIn
@@ -133,13 +124,13 @@ namespace GymSignIn
 
         }
 
-            Camera camera = new Camera();
+            //Camera camera = new Camera();
         private void materialRaisedButton2_Click(object sender, EventArgs e)
         {
            
-            camera.OnFrameArrived += Camera_OnFrameArrived;
-            camera.ChangeCamera(0);
-            camera.Start(1);
+            //camera.OnFrameArrived += Camera_OnFrameArrived;
+            //camera.ChangeCamera(0);
+            //camera.Start(1);
 
 
         }
@@ -147,15 +138,18 @@ namespace GymSignIn
 
 
         Image image;
-        private void Camera_OnFrameArrived(object source, FrameArrivedEventArgs e)
-        {
-            image = e.GetFrame();
-            clientPicureBox.Image = image;
-        }
+        //private void Camera_OnFrameArrived(object source, FrameArrivedEventArgs e)
+        //{
+        //    image = e.GetFrame();
+
+        //    clientPicureBox.Image = image;
+        //}
+
         byte[] pic;
+
         private void materialRaisedButton2_Click_1(object sender, EventArgs e)
         {
-            camera.Stop();
+            //camera.Stop();
             clientPicureBox.Image = image;
             MemoryStream stream = new MemoryStream();
             clientPicureBox.Image.Save(stream, System.Drawing.Imaging.ImageFormat.Jpeg);
